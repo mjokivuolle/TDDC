@@ -1,4 +1,4 @@
-# TDDC
+# Time-Dependent Diffusion Contrast implementation
 Time-dependent diffusion contrast (TDDC) implementation in Matlab with some example data.
 
 The function TDDContrast.m takes two diffusion-weighted MR images as input and calculates the TDDC as defined in the original publication [1]. The input images should have otherwise equal aquisition parameters except the effective diffusion time, which should be different. Minimum two b-values per input image are required: b = 0 s/mm^2 and a non-zero b-value. The TDDC is calculated per b-value. This implementation of TDDC has been initially tested on clinical MRI systems [1] and subsequently validated against histology in glioblastoma (Manuscript in preparation) and oral squamous cell carcinoma (Manuscript in preparation).
